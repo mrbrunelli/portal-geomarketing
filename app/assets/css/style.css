@@ -14,3 +14,7 @@ ul {
 .logo:hover {
     transform: rotatey(180deg);
 }
+
+.row {
+    margin: 0;
+}
