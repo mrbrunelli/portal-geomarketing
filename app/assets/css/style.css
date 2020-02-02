@@ -6,3 +6,11 @@ ul {
     text-decoration: none;
     list-style: none;
 }
+
+.logo {
+    transition: 500ms;
+}
+
+.logo:hover {
+    transform: rotatey(180deg);
+}
