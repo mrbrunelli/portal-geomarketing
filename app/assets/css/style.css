@@ -1,20 +1,86 @@
-body {
-    font-family: 'Montserrat', sans-serif;
+
+html, body{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+    background-color: #ecf0f1;
+    font-family: Montserrat, sans-serif;
 }
 
-ul {
-    text-decoration: none;
-    list-style: none;
+#formLogin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
-.logo {
-    transition: 500ms;
+#formLogin #usuario {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#formLogin #senha {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
-.logo:hover {
-    transform: rotatey(180deg);
+#bemvindo{
+    animation: aparece .3s;
+}
+#divBemvindo{
+    justify-content: center;
 }
 
-.row {
-    margin: 0;
+input:focus{
+    color: #34495e;
 }
+input[type=text]:not(.browser-default):focus:not([readonly])+label{
+    color: #2980b9;
+    border-color: yellow;
+}
+input[type=password]:not(.browser-default):focus:not([readonly])+label{
+    color: #2980b9;
+    border-color: yellow;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #2980b9;
+    box-shadow: 0 1px 0 0 #2980b9;
+}
+input[type=password]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #2980b9;
+    box-shadow: 0 1px 0 0 #2980b9;
+}
+
+.btn{
+    background-color: #2980b9;
+}
+.btn:hover{
+    background-color: #3498db;
+    color: white;
+}
+
+
+@keyframes aparece {
+    0% {
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
