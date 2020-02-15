@@ -1,173 +1,155 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Portal Geomatketing</title>
-</head>
-
-<body>
-    <header class="sticky-top shadow mb-5">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a href="" class="navbar-brand logo">Geo Marketing <small>pesquisas</small></a>
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fas fa-search"></i> Pesquisas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fas fa-book-open"></i> Metodologia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fas fa-chart-area"></i> IBGE</a>
-                        </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a href="" class="nav-link dropdown-toggle" id="dropdownuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-user"></i> Admin
-                                </a>
-                                <div class="dropdown-menu text-center shadow" aria-labelledby="dropdownuser">
-                                    <a href="" class="dropdown-item"><i class="fas fa-user-cog"></i> - Usuário</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a href="" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sair</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<?php
+include '../../includes/header.php';
+?>
 
 
-
-    <!-- KPI DE PESQUISAS -->
-    <div id="contador" class="my-5">
-        <div class="text-center py-5">
-            <div class="row justify-content-around">
-                <div class="col-md-3 shadow p-4 rounded">
-                    <h5>Total de pesquisas</h5>
-                    <h2 class="text-muted">4567</h2>
-                </div>
-                <div class="col-md-3 shadow p-4 rounded">
-                    <h5>Setor com mais pesquisas</h5>
-                    <h2 class="text-muted">Atacado</h2>
-                </div>
-                <div class="col-md-3 shadow p-4 rounded">
-                    <h5>Maior nota</h5>
-                    <h2 class="text-muted">Logística 9.5</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- ÚLTIMAS PESQUISAS -->
-    <div id="pesquisa" class="my-5">
-        <div class="container text-center">
-            <h5>Últimas Pesquisas</h5>
-            <div class="row justify-content-around mt-5">
-                <div class="col-md-2">
-                    <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
-                    <p><small>Pesquisa Logística<br>Data: 10/12/2019</small></p>
-                </div>
-                <div class="col-md-2">
-                    <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
-                    <p><small>Pesquisa Varejo<br>Data: 10/12/2019</small></p>
-                </div>
-                <div class="col-md-2">
-                    <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
-                    <p><small>Pesquisa Indústria<br>Data: 10/12/2019</small></p>
-                </div>
-                <div class="col-md-2">
-                    <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
-                    <p><small>Pesquisa Atacado<br>Data: 10/12/2019</small></p>
-                </div>
-                <div class="col-md-2">
-                    <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
-                    <p><small>Pesquisa Atacado<br>Data: 10/12/2019</small></p>
-                </div>
-                <div class="col-md-2">
-                    <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
-                    <p><small>Pesquisa Atacado<br>Data: 10/12/2019</small></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- METODOLOGIA -->
-    <div id="metodologia" class="my-5">
-        <div class="container text-center">
-            <h5>Metodologia</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam placeat dolor debitis dicta sequi eos similique, atque quisquam, praesentium corrupti temporibus ipsa neque. Soluta accusamus perspiciatis saepe animi modi? Magnam.</p>
-        </div>
-    </div>
-
-    <div id="leis" class="my-5">
-        <div class="container text-center">
-            <h5>Leis</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus non, quasi doloremque libero a aperiam facere cum suscipit dolorum, cupiditate officiis animi. Sed, illum aut unde nesciunt nisi nemo.</p>
-        </div>
-    </div>
-
-
-
-
-    <!-- RODAPÉ -->
-    <footer class="bg-dark text-light py-4">
+<header class="sticky-top shadow mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <div class="row justify-content-around">
-                <div class="col-md-12 text-center mb-4">
-                    <h2>Portal Geomarketing</h2>
-                    <p class="text-muted">Todas as pesquisas em um único lugar</p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <h5>Sobre</h5>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem eveniet possimus</p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <h5>Links</h5>
-                    <p>
-                        <a href="" class="text-muted">Pesquisas por estado</a><br>
-                        <a href="" class="text-muted">Pesquisas por cidade</a><br>
-                        <a href="" class="text-muted">Pesquisas por renda</a><br>
-                    </p>
-                </div>
-
-                <div class="col-md-4 text-center">
-                    <h5>Desenvolvido por</h5>
-                    <p>
-                        <a href="https://github.com/mrbrunelli" target="_blank" class="text-muted">Matheus Ricardo Brunelli</a><br>
-                        <a href="https://github.com/mazinevinicius" target="_blank" class="text-muted">Vinicius Marques Mazine</a>
-                    </p>
-                </div>
-
+            <a href="" class="navbar-brand logo">Geo Marketing <small>pesquisas</small></a>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fas fa-search"></i> Pesquisas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fas fa-book-open"></i> Metodologia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fas fa-chart-area"></i> IBGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="" class="nav-link dropdown-toggle" id="dropdownuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user"></i> Admin
+                            </a>
+                            <div class="dropdown-menu text-center shadow" aria-labelledby="dropdownuser">
+                                <a href="" class="dropdown-item"><i class="fas fa-user-cog"></i> - Usuário</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </nav>
+</header>
 
 
-</body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- KPI DE PESQUISAS -->
+<div id="contador" class="my-5">
+    <div class="text-center py-5">
+        <div class="row justify-content-around">
+            <div class="col-md-3 shadow p-4 rounded">
+                <h5>Total de pesquisas</h5>
+                <h2 class="text-muted">4567</h2>
+            </div>
+            <div class="col-md-3 shadow p-4 rounded">
+                <h5>Setor com mais pesquisas</h5>
+                <h2 class="text-muted">Atacado</h2>
+            </div>
+            <div class="col-md-3 shadow p-4 rounded">
+                <h5>Maior nota</h5>
+                <h2 class="text-muted">Logística 9.5</h2>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script>
-</script>
-</body>
 
-</html>
+
+<!-- ÚLTIMAS PESQUISAS -->
+<div id="pesquisa" class="my-5">
+    <div class="container text-center">
+        <h5>Últimas Pesquisas</h5>
+        <div class="row justify-content-around mt-5">
+            <div class="col-md-2">
+                <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
+                <p><small>Pesquisa Logística<br>Data: 10/12/2019</small></p>
+            </div>
+            <div class="col-md-2">
+                <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
+                <p><small>Pesquisa Varejo<br>Data: 10/12/2019</small></p>
+            </div>
+            <div class="col-md-2">
+                <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
+                <p><small>Pesquisa Indústria<br>Data: 10/12/2019</small></p>
+            </div>
+            <div class="col-md-2">
+                <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
+                <p><small>Pesquisa Atacado<br>Data: 10/12/2019</small></p>
+            </div>
+            <div class="col-md-2">
+                <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
+                <p><small>Pesquisa Atacado<br>Data: 10/12/2019</small></p>
+            </div>
+            <div class="col-md-2">
+                <a href=""><i class="fas fa-file-excel fa-3x text-success"></i></a>
+                <p><small>Pesquisa Atacado<br>Data: 10/12/2019</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- METODOLOGIA -->
+<div id="metodologia" class="my-5">
+    <div class="container text-center">
+        <h5>Metodologia</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam placeat dolor debitis dicta sequi eos similique, atque quisquam, praesentium corrupti temporibus ipsa neque. Soluta accusamus perspiciatis saepe animi modi? Magnam.</p>
+    </div>
+</div>
+
+<div id="leis" class="my-5">
+    <div class="container text-center">
+        <h5>Leis</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel temporibus non, quasi doloremque libero a aperiam facere cum suscipit dolorum, cupiditate officiis animi. Sed, illum aut unde nesciunt nisi nemo.</p>
+    </div>
+</div>
+
+
+
+
+<!-- RODAPÉ -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-md-12 text-center mb-4">
+                <h2>Portal Geomarketing</h2>
+                <p class="text-muted">Todas as pesquisas em um único lugar</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h5>Sobre</h5>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. In exercitationem eveniet possimus</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h5>Links</h5>
+                <p>
+                    <a href="" class="text-muted">Pesquisas por estado</a><br>
+                    <a href="" class="text-muted">Pesquisas por cidade</a><br>
+                    <a href="" class="text-muted">Pesquisas por renda</a><br>
+                </p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h5>Desenvolvido por</h5>
+                <p>
+                    <a href="https://github.com/mrbrunelli" target="_blank" class="text-muted">Matheus Ricardo Brunelli</a><br>
+                    <a href="https://github.com/mazinevinicius" target="_blank" class="text-muted">Vinicius Marques Mazine</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<?php
+include '../../includes/footer.php';
+?>

@@ -11,7 +11,7 @@ include './includes/header.php';
             </div>
 
             <div class="input-field col s12">
-                <input type="text" name="usuario" id="usuario" class="comborda" required>
+                <input type="email" name="email" id="email" class="comborda" required>
                 <label for="usuario" class="lab">Usuario</label>
             </div>
             <div class="input-field col s12">
@@ -26,13 +26,17 @@ include './includes/header.php';
                 </label>
             </div>
 
-            <button class="btn btn-block " id="botao" type="submit">Entre</button>
+            <button type="button" class="btn btn-block" id="botaoLogin" onclick="login()">Entre</button>
+
+            <div class="py-4 offset-5">
+                <div class="loader" id="loader"></div>
+            </div>
         </form>
     </div>
 </div>
 
 <script>
-    
+
 </script>
 
 
