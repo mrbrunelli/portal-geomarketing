@@ -1,6 +1,7 @@
 <script>
     window.onload = function() {
-        toastr.info('Olá <?= $_SESSION['UsuarioNome'] ?>', 'Login realizado com sucesso!')
+        // O explode está na index.php
+        toastr.info('Seja bem vindo <?= $usuario[0] ?>!')
     }
 </script>
 

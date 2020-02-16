@@ -5,6 +5,10 @@ if (!isset($_SESSION['UsuarioID'])) {
     header('location: ../../index.php');
 }
 
+// Pegar apenas o primeiro nome do usuário
+$usuario = $_SESSION['UsuarioNome'];
+$usuario = explode(' ', $usuario);
+
 include '../../includes/header.php';
 ?>
 
@@ -26,7 +30,7 @@ include '../../includes/header.php';
                     <li class="nav-item">
                         <div class="dropdown">
                             <a href="" class="nav-link dropdown-toggle" id="dropdownuser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user"></i> Admin
+                                <i class="fas fa-user"></i> <?= $usuario[0] ?>
                             </a>
                             <div class="dropdown-menu text-center shadow" aria-labelledby="dropdownuser">
                                 <a href="" class="dropdown-item"><i class="fas fa-user-cog"></i> - <?= $_SESSION['UsuarioNome'] ?></a>
@@ -47,6 +51,7 @@ include '../../includes/header.php';
 <?php
 
 if ($_SESSION['UsuarioTipo'] == 'A') {
+    // if ternário, o primeiro é a condição, o segundo é verdadeiro e o terceiro é o else
     isset($_GET['pagina']) ? $pagina = trim($_GET['pagina']) : $pagina = 'home';
 } else {
     isset($_GET['pagina']) ? $pagina = trim($_GET['pagina']) : $pagina = 'erro';

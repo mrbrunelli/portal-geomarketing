@@ -1,0 +1,4 @@
+/* Bug na barra horizontal, deixando margin 0 esse bug resolve */
+.row {
+    margin: 0;
+}
