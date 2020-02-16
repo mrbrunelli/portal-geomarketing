@@ -43,7 +43,7 @@ async function login() {
                     if (result == '1') {
                         window.location.href = './app/pages/'
                     } else {
-                        Swal.fire('Erro!', 'Usuário não encontrado!', 'error')
+                        Swal.fire('Erro!', 'Email ou Senha incorretos!', 'error')
                         $('#loader').hide()
                         console.log(result)
                     }

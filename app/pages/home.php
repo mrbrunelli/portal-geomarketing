@@ -1,6 +1,6 @@
 <script>
     window.onload = function() {
-        toastr.info('Olá usuário', 'Login realizado com sucesso!')
+        toastr.info('Olá <?= $_SESSION['UsuarioNome'] ?>', 'Login realizado com sucesso!')
     }
 </script>
 
@@ -11,7 +11,6 @@
             <div class="col-md-3 shadow p-4 rounded">
                 <h5>Total de pesquisas</h5>
                 <h2 class="text-muted">4567</h2>
-                <?= $_SESSION['UsuarioNome']; ?>
             </div>
             <div class="col-md-3 shadow p-4 rounded">
                 <h5>Setor com mais pesquisas</h5>

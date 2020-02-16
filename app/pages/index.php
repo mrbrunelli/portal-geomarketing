@@ -29,7 +29,7 @@ include '../../includes/header.php';
                                 <i class="fas fa-user"></i> Admin
                             </a>
                             <div class="dropdown-menu text-center shadow" aria-labelledby="dropdownuser">
-                                <a href="" class="dropdown-item"><i class="fas fa-user-cog"></i> - Usuário</a>
+                                <a href="" class="dropdown-item"><i class="fas fa-user-cog"></i> - <?= $_SESSION['UsuarioNome'] ?></a>
                                 <div class="dropdown-divider"></div>
                                 <!-- Destroi a sessão e redireciona para o login -->
                                 <a href="../../backend/logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Sair</a>
