@@ -6,7 +6,7 @@ if ($_POST) {
         include './conexao.php';
         include './fn.php';
         $email = trim($_POST['email']);
-        $senha = trim($_POST['senha']);
+        $senha = md5($_POST['senha']);
 
         $result = fnQuery("select * from usuario where email = '$email' and senha = '$senha' limit 1");
 

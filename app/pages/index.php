@@ -20,5 +20,4 @@ if (file_exists($pagina)) {
     include 'erro.php';
 }
 
-
 include '../../includes/footer.php';
