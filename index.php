@@ -43,7 +43,7 @@
                     </label>
                 </div>
 
-                <button type="button" class="btn btn-block" id="botaoLogin" onclick="login()">Entre</button>
+                <button type="button" class="btn btn-block" id="botaoLogin" onclick="login()">Entrar</button>
 
                 <div class="py-4 offset-5">
                     <div class="loader" id="loader"></div>
